@@ -1,6 +1,6 @@
 var url='http://YouTube.com'; // ссылка перехода
-var h=0;    // интервал срабатывания, часов
-var m=1;    // интервал срабатывания, минут
+var h = prompt('Количество часов на одно срабатывание:', '1');;    // интервал срабатывания, часов
+var m=0;    // интервал срабатывания, минут
 
 function Clickunder() {
     CookieTest=navigator.cookieEnabled;
