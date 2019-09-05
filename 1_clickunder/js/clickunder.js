@@ -13,7 +13,7 @@ function Clickunder() {
             var ExpDate = new Date ();
             ExpDate.setTime(ExpDate.getTime() + ( (h * 60 + m) * 60 * 1000));
             SetCookie('clickunder','1',ExpDate, "/");
-            window.open("javascript:location.href='"+url+"';","YouTube","width=800,height=600, resizable=1,toolbar=1,location=1,menubar=1,status= 1,scrollbars=1'");
+            window.open(url,"YouTube","width=800,height=600, resizable=1,toolbar=1,location=1,menubar=1,status= 1,scrollbars=1");
             window.focus();
         }
     }
