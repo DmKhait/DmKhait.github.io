@@ -1,0 +1,548 @@
+body {
+    margin: 0 auto;
+}
+.block {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+.gradient, .back, .photo, .joshua, .block_info {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 90px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.gradient {
+    background-image: linear-gradient( 45deg, rgb(48,56,59) 40%, rgb(27,68,61) 100%);
+    z-index: 3;
+    mix-blend-mode: hard-light;
+}
+ .back {
+     background-image: url("../img/back.jpg");
+     z-index: 0;
+ }
+.photo {
+    background-image: url("../img/arun.jpg");
+    z-index: 1;
+    transition: ease all 1s;
+}
+.joshua {
+    background-image: url("../img/joshua.png");
+    z-index: -1;
+    transition: ease all 1ms;
+}
+.block_info {
+    z-index: 4;
+}
+.logo {
+    position: absolute;
+}
+.logo p {
+    line-height: 27px;
+    font-size: 17px;
+    font-family: "Myriad Pro Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid white;
+    margin: 0;
+}
+.block_text {
+    position: relative;
+    left: 50%;
+    width: 90px;
+    z-index: 5;
+}
+.block_text p{
+    position: absolute;
+    font-family: "Myriad Pro Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.8;
+    margin: 0;
+}
+.day {
+    font-size: 30.48px;
+}
+.foy {
+    font-size: 19.15px;
+    color: #b5b5b5;
+    font-family: "Myriad Pro Regular", sans-serif;
+}
+.skb {
+    font-size: 14.98px;
+}
+.data{
+    position: absolute;
+    opacity: 0.45;
+}
+.button {
+    position: absolute;
+    color: white;
+    z-index: 4;
+}
+.button p, a {
+    font-family: "Myriad Pro Regular", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(54, 79, 0, 0.66);
+    margin: 0;
+    text-decoration: none;
+}
+.normal, .small {
+    position: absolute;
+    background: -webkit-linear-gradient( 90deg, rgb(90,132,0) 36%, rgb(172,193,127) 80%, rgb(254,254,254) 100%);
+    box-shadow: 0 2px 0 0 rgb(54, 79, 0);
+    cursor: pointer;
+}
+/*280px*/
+@media (min-width: 280px) and (max-width: 599px){
+    .gradient {
+        background-size: 1386px 653px;
+        background-position: -235px -354px;
+    }
+    .photo {
+        background-size: 530px 794px;
+        background-position: -85px -307px;
+        animation: photo280 6.5s ease  infinite;
+    }
+    .joshua {
+        background-size: 464px 345px;
+        background-position: -109px -133px;
+        z-index: 0;
+    }
+    .logo {
+        left: 23px;
+        top: 30px;
+        width: 123px;
+        height: 31px;
+        animation: logo280 6.5s ease  infinite;
+    }
+    .block_text {
+        width: 90px;
+        z-index: 5;
+    }
+    .block_text p{
+        left: -62px;
+        top: 19px;
+        animation: text280 6.5s ease  infinite;
+    }
+     .data{
+        width: 54px;
+        height: 29px;
+        left: -126px;
+        top: 41px;
+        animation: data280 6.5s ease  infinite;
+    }
+    .button {
+        right: 91px;
+        top:44px;
+        animation: butloc280 6.5s ease  infinite;
+    }
+    .normal {
+        border-radius: 10px;
+        width: 75px;
+        height: 24px;
+        font-size: 11.1px;
+        line-height: 24px;
+        z-index: 6;
+        animation: button280 6.5s ease  infinite;
+    }
+    .small {
+        border-radius: 9.54px;
+        left: 7px;
+        top: 2px;
+        width: 61px;
+        height: 20px;
+        font-size: 8.82px;
+        line-height: 20px;
+        z-index: 5;
+    }
+    .location {
+        position: absolute;
+        width: 40px;
+        height: 17px;
+        left: 35px;
+        top: -26px;
+        transition: ease all 1ms;
+    }
+    @keyframes photo280 {
+        from {
+            z-index: 1;
+        }
+        60.51% {
+            z-index: 1;
+        }
+        61.03% {
+            z-index: -1;
+        }
+        to{
+            z-index: -1;
+        }
+    }
+    @keyframes logo280 {
+        from{
+            opacity: 1;
+        }
+         25% {
+             opacity: 1;
+         }
+         25.13% {
+             opacity: 0;
+         }
+         to {
+             opacity: 0;
+         }
+     }
+    @keyframes text280 {
+        from{
+            opacity: 0;
+        }
+        25% {
+            opacity: 0;
+        }
+        25.13% {
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes data280 {
+        from {
+            left: -126px;
+            opacity: 0;
+        }
+        27.18% {
+            left: -69px;
+        }
+        28.72% {
+            opacity: 0;
+        }
+        31.79% {
+            left: -126px;
+            opacity: 0.45;
+        }
+        to {
+            left: -126px;
+            opacity: 0.45;
+        }
+    }
+    @keyframes butloc280 {
+        from{
+            opacity: 0;
+        }
+        60.51% {
+            opacity: 0;
+        }
+        61.03% {
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes button280 {
+        0%, 74.36%, 77.44%, 79.49%, 82.56%, 84.62%, 87.69%, 100% {
+            opacity: 1;
+        }
+        74.87%, 76.92%, 80%, 82.05%, 85.13%, 87.18%{
+            opacity: 0;
+        }
+    }
+}
+/*640px*/
+@media (min-width: 600px) and (max-width: 929px) {
+     .gradient {
+         background-size: 1024px 482px;
+         background-position: -90px -243px;
+     }
+     .back {
+         background-size: 1024px 117px;
+         background-position: -90px -15px;
+     }
+     .photo {
+         background-size: 563px 844px;
+         background-position: -79px -351px;
+     }
+     .joshua {
+         background-size: 1082px 763px;
+         background-position: -331px -318px;
+         animation: joshua640 8.1s ease  infinite;
+     }
+     .logo {
+         left: 28px;
+         top: 31px;
+         width: 130px;
+         height: 33px;
+     }
+     .block_text {
+         width: 153px;
+         z-index: 5;
+     }
+     .block_text p{
+         left: -36px;
+         top: 8px;
+     }
+     .day, .foy{
+         font-size: 32.58px;
+     }
+     .skb {
+         font-size: 25.5px;
+     }
+     .data{
+         width: 85px;
+         height: 47px;
+         left: -135px;
+         top: 33px;
+         animation: data640 8.1s ease  infinite;
+     }
+     .button {
+         right: 120px;
+         top:33px;
+     }
+     .normal {
+         border-radius: 10px;
+         width: 92px;
+         height: 29px;
+         font-size: 18.04px;
+         line-height: 29px;
+         z-index: 6;
+         animation: button640 8.1s ease  infinite;
+     }
+     .small {
+         border-radius: 10px;
+         left: 9px;
+         top: 3px;
+         width: 74px;
+         height: 23px;
+         font-size: 14.34px;
+         line-height: 23px;
+         z-index: 5;
+     }
+     .location {
+         position: absolute;
+         width: 48px;
+         height: 20px;
+         left: -65px;
+         top: 29px;
+     }
+    @keyframes joshua640 {
+        0%{
+            z-index: -1;
+        }
+        61.32% {
+            z-index: -1;
+        }
+        61.73% {
+            z-index: 4;
+        }
+        100% {
+            z-index: 4;
+        }
+    }
+    @keyframes data640 {
+        from {
+            left: -135px;
+            opacity: 0;
+        }
+        7.82% {
+            left: -38px;
+        }
+        9.47% {
+            opacity: 0;
+        }
+        11.52% {
+            left: -135px;
+            opacity: .45;
+        }
+        to {
+            left: -135px;
+            opacity: .45;
+        }
+    }
+    @keyframes button640 {
+        0%, 28.4%, 31.28%, 33.33%, 36.21%, 38.27%, 41.15%,
+        77.78%, 80.66%, 82.72%, 85.60%, 87.65%, 90.53%, 100% {
+            opacity: 1;
+        }
+        28.81%, 30.86%, 33.74%, 35.8%, 38.68%, 40.74%,
+        78.19%, 80.25%, 83.13%, 85.19%, 88.07%, 90.12% {
+            opacity: 0;
+        }
+    }
+}
+/*1024*/
+@media (min-width: 930px)  {
+    .block {
+        max-width: 1024px;
+    }
+    .gradient {
+        background-size: 1024px 482px;
+        background-position: 0 -241px;
+        animation: gradient1024 8.2s linear  infinite;
+    }
+    .back {
+        background-size: 1024px 117px;
+        background-position: 0 -13px;
+    }
+    .photo {
+        background-size: 614px 920px;
+        animation: photo1024 8.2s ease  infinite;
+    }
+    .joshua {
+        background-size: 1082px 763px;
+        animation: joshua1024 8.2s ease normal infinite;
+    }
+    .logo {
+        left: 57px;
+        top: 26px;
+        width: 156px;
+        height: 40px;
+    }
+    .logo p {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .block_text {
+        width: 200px;
+        z-index: 5;
+    }
+    .block_text p{
+        left: -82px;
+        top: 17px;
+        animation: text1024 8.2s ease  infinite;
+    }
+    .day, .foy{
+        font-size: 39.57px;
+        line-height: 0.87;
+    }
+    .skb {
+        font-size: 30.97px;
+    }
+    .data{
+        width: 107px;
+        height: 57px;
+        left: -206px;
+        top: 17px;
+    }
+    .button {
+        right: 179px;
+        top:26px;
+    }
+    .normal {
+        border-radius: 10px;
+        width: 123px;
+        height: 39px;
+        font-size: 18.04px;
+        line-height: 39px;
+        z-index: 6;
+        animation: button1024 8.2s ease  infinite;
+    }
+    .small {
+        border-radius: 10px;
+        left: 12px;
+        top: 4px;
+        width: 99px;
+        height: 31px;
+        font-size: 14.34px;
+        line-height: 31px;
+        z-index: 5;
+    }
+    .location {
+        position: absolute;
+        width: 68px;
+        height: 29px;
+        left: -112px;
+        top: 16px;
+        transition: ease all 1s;
+    }
+    .block_text br{
+          display: none;
+    }
+    @keyframes gradient1024 {
+        0%{
+            opacity: 0;
+        }
+        17%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes photo1024 {
+        0%{
+            background-position: -4px -410px;
+            opacity: 0;
+        }
+        10%{
+            background-position: -4px -410px;
+        }
+        13%{
+            opacity: 0;
+        }
+        17%{
+            background-position: -4px -370px;
+            opacity: 1;
+            z-index: 1;
+        }
+        60%{
+            z-index: 1;
+        }
+        100%{
+            background-position: -4px -370px;
+            opacity: 1;
+            z-index: -1;
+        }
+    }
+    @keyframes joshua1024 {
+        0%{
+            background-position: 0 -277px;
+            opacity: 0;
+            z-index: -1;
+        }
+        59%{
+            background-position: 0 -277px;
+            z-index: -1;
+        }
+        61%{
+            opacity: 0;
+            z-index: 1;
+        }
+        64%{
+            opacity: 1;
+            background-position: 0 -188px;
+        }
+        100%{
+            opacity: 1;
+            background-position: 0 -188px;
+            z-index: 1;
+        }
+    }
+    @keyframes text1024 {
+        from{
+            opacity: 0;
+        }
+        4.06%{
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes button1024 {
+        0%, 27.4%, 30.49%, 32.93%, 36.18%, 73.58%,
+        76.83%, 79.27%, 82.52%, 84.96%, 88.21%, 100% {
+            opacity: 1;
+        }
+        27.64%, 30.08%, 33.33%, 35.77%, 73.98%, 76.42%,
+        79.67%, 82.11%, 85.37%, 87.8% {
+            opacity: 0;
+        }
+    }
+}
