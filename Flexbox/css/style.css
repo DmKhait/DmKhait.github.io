@@ -32,7 +32,6 @@ header h3 {
     border-bottom: 1px solid  #E4E8EF;
     padding: 0 0 10px 10px;
     margin: 20px auto 30px;
-    width: 100%;
 }
 .boxshadow{
 	display:flex;
@@ -165,7 +164,7 @@ header h3 {
 	list-style: none;
 	position: absolute;
 	top: -10px;
-	right: -105px;
+	right: -50px;
 	padding: 15px;
 	z-index: 1;
 	-webkit-box-shadow: 0 0 5px #CECEFF;
@@ -291,6 +290,9 @@ section .item {
 	    margin: 20px 5px 30px;
 		font-size: 22px;
     }
+	.dropvis ul {
+		right: -7px;
+	}
 }
 
 @media (min-width: 576px) and (max-width: 767px){
